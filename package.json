@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/GuillaumeUnice/WebRTCTutorial#readme",
   "dependencies": {
-    "web-rtc-lib-cdn-echyzen": "0.0.32"
+    "web-rtc-lib-cdn-echyzen": "0.0.33"
   }
 }
