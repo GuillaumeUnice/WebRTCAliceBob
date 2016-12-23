@@ -1,0 +1,4 @@
+Il existe une multite d'event du cycle de vie du stream donc vous pouvez allez jetez un coup d'oeil si vous souhaité.
+
+
+https://plugin.temasys.io/demo/src/content/getusermedia/screensharing/

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WebRTC Tutorial Alice</title>
+    <link rel="stylesheet" type="text/css" href="./../main.css">
+  </head>
+  <body>
+
+        
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" placeholder="Your message here" autocomplete="off" />
+      <button id="m_submit" type="submit">Send</button>
+      <button id="web_rtc_button">Make visio</button>
+      <video id="localVideo" controls autoplay height="225" width="300"></video>
+      <video id="remoteVideo" controls autoplay height="225" width="300"></video>
+    </form>
+    
+    <script src="https://cdn.temasys.com.sg/adapterjs/0.13.x/adapter.debug.js"></script>
+    <script src="https://cdn.temasys.com.sg/adapterjs/0.13.x/adapter.screenshare.js"></script>
+
+    <script src="./node_modules/kaazing-enterprise-client/WebSocket.js"></script>
+    <script src="./node_modules/kaazing-enterprise-client/JmsClient.js"></script>
+
+    <script src="./node_modules/web-rtc-lib-cdn-echyzen/dist/CDN/WebRtcCDN.js"></script>
+    <script>
+       var test = new WebRtcCDN.WebRTCLib('ws://126.246.166.113:8000/jms', '/topic/15', '/topic/15')
+      console.log(test);
+
+// test.createStream({"video": true, "audio":true}, function(stream){
+//   // get local stream for manipulation
+//   let local = document.getElementById('localVideo');
+//   WebRtcCDN.WebRTCLib.attachStream(stream, local);
+// } , function(stream){
+//   // get remote stream for manipulation
+//   let remote = document.getElementById('remoteVideo');
+//   WebRtcCDN.WebRTCLib.attachStream(stream, remote);
+// });
+
+
+    </script>
+<!--    
+
+
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+    <script src="./node_modules/web-rtc-lib-cdn-echyzen/dist/WebRtcLib.js"></script>
+
+
+    <script src="./js/reactorPattern.js"></script>
+
+    <script src="https://cdn.temasys.com.sg/adapterjs/0.13.x/adapter.debug.js"></script>
+    <script src="https://cdn.temasys.com.sg/adapterjs/0.13.x/adapter.screenshare.js"></script>
+    <script src="./js/socket.js"></script>
+    <script src="./js/chat.js"></script>
+    <script src="./js/webRTC.js"></script>
+
+    <script src="./js/webRTCDataChannel.js"></script>
+-->
+
+
+  </body>
+</html>
